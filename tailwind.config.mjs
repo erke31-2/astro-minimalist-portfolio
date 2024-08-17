@@ -11,6 +11,9 @@ export default {
         softWhite: "#F5F5F5",
         lightGray: "#BFBFBF",
       },
+      gridTemplateColumns: {
+        socialLayout: "repeat(auto-fit, minmax(120px, 1fr))",
+      },
     },
   },
   plugins: [],
