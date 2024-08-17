@@ -1,0 +1,36 @@
+---
+import Header from "../components/Header.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const {
+  title,
+  description = "Hello World",
+  image = "/images/withastro.png",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta property="og:image" content={image} />
+    <title>{title}</title>
+  </head>
+  <body class="w-full h-screen overflow-y-auto bg-deepNavy">
+    <div
+      class="w-full max-w-[1240px] mx-auto flex flex-col items-center lg:flex-row lg:items-start p-10 lg:p-16 gap-16 lg:gap-20 text-softWhite"
+    >
+      <Header currentRoute={Astro.url.pathname} />
+      <slot />
+    </div>
+  </body>
+</html>
