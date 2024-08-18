@@ -7,7 +7,7 @@ export default {
         deepNavy: "#12172B",
         charcoal: "#1A1A1A",
         offWhite: "#E8E8E8",
-        oceanBlue: "#007BFF",
+        oceanBlue: "#559DEE",
         softWhite: "#F5F5F5",
         lightGray: "#BFBFBF",
       },
