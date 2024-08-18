@@ -9,7 +9,7 @@ interface Props {
 
 const {
   title,
-  description = "Hello World",
+  description = "Hello, I'm Shine Maw Arnt",
   image = "/images/withastro.png",
 } = Astro.props;
 ---
@@ -24,8 +24,12 @@ const {
     <meta name="generator" content={Astro.generator} />
     <meta property="og:image" content={image} />
     <title>{title}</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap");
+    </style>
   </head>
-  <body class="w-full h-screen overflow-y-auto bg-deepNavy">
+  <body class="w-full h-screen overflow-y-auto bg-deepNavy font-nunito">
     <div
       class="w-full max-w-[1240px] mx-auto flex flex-col items-center lg:flex-row lg:items-start py-10 px-6 lg:p-16 gap-16 lg:gap-20 text-softWhite"
     >

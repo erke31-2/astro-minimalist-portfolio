@@ -14,6 +14,10 @@ export default {
       gridTemplateColumns: {
         socialLayout: "repeat(auto-fit, minmax(120px, 1fr))",
       },
+      fontFamily: {
+        merriweather: ["Merriweather", "serif"],
+        nunito: ["Nunito", "sans-serif"],
+      },
     },
   },
   plugins: [],
